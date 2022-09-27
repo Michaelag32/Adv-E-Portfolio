@@ -42,14 +42,14 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -58,6 +58,8 @@
           </li>
         </ul>
       </nav>
+
+
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
@@ -68,7 +70,7 @@
             learn new things. My goal is to make web applications that deliver a
             great user experience.
             <br />
-            Here's a bit more <b class="blue">about me.</b>
+            Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a href="#" target="_blank" class="social__link click">
@@ -87,7 +89,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-duotone fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -122,6 +124,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Lets have a chat !
           </h3>
@@ -152,7 +155,6 @@
             Thanks for the message! Looking forward to connecting soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click" ></i>
       </div>
     </section>
 

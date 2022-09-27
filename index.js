@@ -1,8 +1,16 @@
-// template_up88xvo
+let isModalOpen = false;
+let contrastToggle = false;
 
-// service_dkvl46u
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += ' dark-theme'
+    }
+    else {
+        document.body.classList.remove ('dark-theme')
+    }
+}
 
-// PBPb6T43vHoDYGhn6
 
 function contact(event) {
   event.preventDefault();
@@ -25,4 +33,13 @@ function contact(event) {
             'The email service is temporarily unavailable. Please contact me directly on tenocklaguna1@gmail.com'
         );
     })
+}
+
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove('modal--open')
+    }
+    isModalOpen = true;
+    document.body.classList += ' modal--open';
 }
