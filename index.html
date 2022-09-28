@@ -28,7 +28,7 @@
           <img id="personal-logo" src="./assets/logo.svg" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -37,7 +37,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -62,7 +62,18 @@
 
       <header class="header">
         <div class="header__content">
-          <h1 class="title">Hey</h1>
+          <h1 class="title">Hey <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+          </head>
+          <body>
+            
+          </body>
+          </html></h1>
           <h1 class="title blue">I'm Michael.</h1>
           <p class="header__para">
             I'm an aspiring
@@ -89,9 +100,11 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-duotone fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-duotone fa-envelope"></i>
+        </button>
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -102,7 +115,7 @@
           <p class="modal__para">
             I'm a 19 year-old American <b class="blue">software engineer</b>.
             <br>
-            I currently work on extremely difficult engeneering problems.
+            I currently work on extremely difficult engeneering problems. I am also in love with my girlfriend.
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
@@ -287,25 +300,26 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="#"
+              href="https://github.com/Michaelag32" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Github
             </a>
             <a
-              href="#"
+              href="#" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               LinkedIn
             </a>
             <a
               href="#"
+              onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Contact
             </a>
             <a
-              href="#"
+              href="./assets/Example Resume.pdf" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
